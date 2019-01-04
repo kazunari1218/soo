@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+body {
+  margin: 0;
+  padding: 0;
+  text-orientation: upright;
+  width: 100%;
+}
+	/* font-family:  "Kokoro"; */
+	/* font-family: "Hannari", "Kokoro"; */
+	/* font-family: "Hannari", "Kokoro"; */
+	
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ li {
+  list-style: none;
+}
+
+.headroom {
+  height: 100px;
+  background-color: gold;
+  width: 100%;
+  position:fixed;
+  display: inline-block;
+}
+
+.headroom h1 {
+  margin: 0;
+  line-height: 100px;
+  font-family: "Hannari", "Kokoro"; 
+  font-size: 40px;
+  display: inline-block;
+  font-weight: normal;
+  float: left;
+  padding-left: 40px;
+}
+
+
+.nav1 ul li {
+  float: left;
+}
+
+.nav1 ul {
+ line-height: 100px;
+  margin: 0;
+}
+
+.nav1 li {
+  margin-left: 50px;
+}
+
+
+
+.nav1 span{
+  font-size: 18px;
+  color: black;
+  font-weight: normal;
+  border-left: 3px solid blue;
+  border-right: 3px solid blue;
+}
+
+.nav1 span:hover {
+  border-bottom: 3px solid blue;
+  border-left: 0;
+  border-right: 0;
+  transition-duration: 0.3s;
+}
+  
+ 
+.overlayMenuBtn  {
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    top: 6.5%;
+    
+    cursor: pointer;
+    z-index: 100001;
+    display: none;
+    position: fixed;
+    color: black;
+    background-color: gold;
+    /* border-radius: 100%; */
+    width: 32px;
+    height: 26px;
+  }
+  .overlayMenuBtn span {
+    position: relative;
+    display: block;
+    width: 30px;
+    border: 1px solid black;
+    transition: .5s;
+  }
+  .overlayMenuBtn span:nth-child(1) { top: 0; }
+  .overlayMenuBtn span:nth-child(2) { top: 10px; }
+  .overlayMenuBtn span:nth-child(3) { top: 20px; }
+
+  .overlayMenu {
+    position: absolute;
+    right: 0;
+    display: none;
+    position: fixed;
+    width: 30%;
+    height: 50vh;
+    overflow: auto;
+    background: rgba(255, 204, 0, 0.8);
+    z-index: 100000;
+  }
+
+
+ 
+
+  .overlayMenuInner {
+    padding: 0 4% 10px 4%;
+
+  }
+
+
+  .overlayMenuItem ul {
+    margin: 20px 0 40px 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  .overlayMenuItem li {
+    display: inline;
+
+  }
+
+  .overlayMenuItem ul li {
+    border-top: 1px solid #ccc;
+  }
+
+  .overlayMenuItem ul li:last-child {
+    border-bottom: 1px solid blue;
+  }
+
+  .overlayMenuItem ul li a {
+    display: block;
+    width: 96%;
+    padding: 20px 0 20px 4%;
+    color:black;
+    text-decoration: none;
+    transition: .5s;
+  }
+
+  .overlayMenuItem ul li a:hover { 
+    background: rgba(255, 255, 255, 0.8); 
+  }
+
+  .overlayMenuItem ul li a:hover { 
+    color: black; }
+
+
+
+.main-room img {
+  width: 100%;
+  height: 400px;
+}
+
+.main-top img {
+  width: 100%;
+  height: 400px;
+}
+
+.news {
+  text-align: center;
+  background-color: white;
+  height: 500px;
+  /* border-bottom:10px solid gold; */
+}
+
+.news h2 {
+  font-weight: normal;
+  padding-top: 50px;
+}
+
+.news-text span {
+  border-bottom:1px solid black;
+  width: 60%;
+}
+
+.news-text span:hover {
+  color: gray;
+
+}
+
+.news-text ul {
+  display: inline-block;
+  text-align: center;
+  margin-top: 60px;
+  padding-left: 0;
+}
+
+.news-text li {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+.main-menu {
+  background-color: white;
+  margin-top: 30px;
+  /* height: 2600px; */
+  text-align: center;
+}
+
+.main-menu h2 {
+  font-weight: normal;
+  padding-top: 60px;
+}
+
+.menu-list {
+  margin-top: 60px;
+  width: 50%;
+  float: left;
+}
+
+.menu-img img {
+  width: 600px;
+  height: 600px;
+}
+
+
+
+.menu-text strong,p {
+  display: inline-block;
+}
+
+.menu-text strong {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.menu-text p {
+  width: 60%;
+  }
+
+.acces {
+  text-align: center;
+  background-color: white;
+  /* height: 850px; */
+  margin-top: 30px;
+}
+
+.acces h2 {
+  font-weight: normal;
+  padding-top: 60px;
+  margin: 0;
+}
+
+.acces-img img{
+  width: 500px;
+  height: 500px;
+  margin-top: 30px;
+}
+
+
+ table {
+  border-collapse: collapse;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+table th,tr,td {
+  border: 1px solid black;
+  font-weight: normal;
+}
+
+table th,td {
+  text-align: left;
+}
+
+.about {
+  margin-top: 30px;
+  height: 400px;
+  background-color: white;
+  text-align: center;
+}
+
+.about h2 {
+  padding-top: 60px;
+  font-weight: normal;
+}
+
+.about-text p{
+  width: 40%;
+}
+
+footer {
+  height: 200px;
+  background-color: gold;
+}
+
+footer a:hover {
+  color: gray;
+  border-bottom: 1px solid gray;
+}
+
+
+
+footer h5 {
+  float: right;
+  color: white;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
