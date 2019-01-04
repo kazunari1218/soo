@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <style type="text/css" media="screen">
+    
+  </style>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport"
+      content="width=device-width,initial-scale=1.0">
+      <title>銀ちゃんラーメン</title>
+
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="responsive.css">
+
+      <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
+      
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script>
+
+$(function(){
+  $('.overlayMenuBtn').on('click', function(){
+
+    var $overlay = $('.overlayMenu');
+    var openClass = 'open';
+
+    if( !$overlay.hasClass(openClass) ){
+
+      $('.overlayMenuBtn span:nth-child(1)').css({'transform':'rotate(-45deg)', 'top':'10px'});
+      $('.overlayMenuBtn span:nth-child(2)').css({'opacity':'0'});
+      $('.overlayMenuBtn span:nth-child(3)').css({'transform':'rotate(45deg)', 'top':'8px', 'border': '1px solid black'});
+
+      $overlay.addClass(openClass);
+      $('body').css( 'overflow', 'hidden');
+      $overlay.fadeIn('slow');
+
+    } else {
+
+      $('.overlayMenuBtn span:nth-child(1)').css({'transform':'rotate(0)', 'top':'0px'});
+      $('.overlayMenuBtn span:nth-child(2)').css({'opacity':'1'});
+      $('.overlayMenuBtn span:nth-child(3)').css({'transform':'rotate(0)', 'top':'20px', 'border': '1px solid black'});
+
+      $overlay.removeClass(openClass);
+      $('body').css( 'overflow', 'auto');
+      $overlay.fadeOut('slow');
+    }
+
+  });
+});
+
+var startPos = 0,winScrollTop = 0;
+$(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos) {
+        $('.headroom').addClass('hide');
+    } else {
+        $('.headroom').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
+</script>
+    </head>
+
+<body>
+
+    <header id="header" class="">
+
+        <div class="headroom clearfix">
+          <a href="index.html"><h1>銀ちゃんラーメン</h1></a>
+
+      <div class="nav1">
+               <ul>
+                  <li><a href="#news"><span onmouseover="this.innerHTML='お知らせ'"
+                    onmouseout="this.innerHTML='NEWS'">NEWS</span></a></li>
+
+                  <li><a href="#menu"><span onmouseover="this.innerHTML='お品書き'"
+                    onmouseout="this.innerHTML='MENU'">MENU</span></a></li>
+
+                  <li><a href="#acces"><span onmouseover="this.innerHTML='アクセス'" 
+                    onmouseout="this.innerHTML='ACCES'">ACCES</span></a></li>
+
+                  <li><a href="#about"><span onmouseover="this.innerHTML='その他'" 
+                    onmouseout="this.innerHTML='ABOUT'">ABOUT</span></a></li>
+                 </ul>
+               </div>
+        
+            
+           </div> 
+    </header>
+
+       
+<div class="overlayMenu">
+  <div class="overlayMenuInner">
+    <div class="overlayMenuItem">
+      
+      <ul>
+        <li><a href="#news">お知らせ</a></li>
+        <li><a href="#menu">お品書き</a></li>
+        <li><a href="#acces">アクセス</a></li>
+        <li><a href="#about">その他</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+<div class="overlayMenuBtn">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    
+ <main>
+<!--   <div class="container"> -->
+    <div class="main-room">
+      
+      <div class="main-top">
+        <img src="img/top-2.png" alt="メインimg">
+      </div>
+      
+      <div id="news" class="news">
+        <h2>〜お知らせ〜</h2>
+        <div class="news-text">
+          <ul>
+            <li><a href=""><span>１２月２５日　銀ちゃんラーメン公式WEBサイトを開設いたしました！！！</span>
+            </a></li>
+
+            <li><a href=""><span>１２月２５日　銀ちゃんラーメン公式WEBサイトを開設いたしました！！！</span>
+            </a></li>
+
+            <li><a href=""><span>１２月２５日　銀ちゃんラーメン公式WEBサイトを開設いたしました！！！</span>
+            </a></li>
+
+            <li><a href=""><span>１２月２５日　銀ちゃんラーメン公式WEBサイトを開設いたしました！！！</span>
+            </a></li>
+          </ul>
+        </div>
+        
+      </div>
+
+      <div id="menu" class="main-menu">
+          <h2>〜お品書き〜</h2> 
+      
+       <div class="menu-list">
+         
+         <div class="menu-img">
+          <img src="img/top-2.png" alt="写真" width="300" height="300">
+         </div>
+         
+         <div class="menu-text">
+          <strong>中華そば</strong>
+          <p>イウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオ</p>
+         </div>
+
+       </div>
+        
+       <div class="menu-list">
+         <div class="menu-img">
+          <img src="img/top-2.png" alt="写真">
+         </div>
+        <div class="menu-text">
+          <strong>中華そば</strong>
+          <p>イウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオ</p>
+         </div>
+       </div>
+        
+       <div class="menu-list">
+         <div class="menu-img">
+          <img src="img/top-2.png" alt="写真">
+         </div>
+         <div class="menu-text">
+          <strong>中華そば</strong>
+          <p>イウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオ</p>
+         </div>
+       </div>
+        
+      <div class="menu-list">
+         <div class="menu-img">
+          <img src="img/top-2.png" alt="写真" >
+         </div>
+         <div class="menu-text">
+          <strong>中華そば</strong>
+          <p>イウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオ</p>
+         </div>
+       </div>
+
+       <div class="menu-list">
+         <div class="menu-img">
+          <img src="img/top-2.png" alt="写真" >
+         </div>
+         <div class="menu-text">
+          <strong>中華そば</strong>
+          <p>イウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオ</p>
+         </div>
+       </div>
+        
+      <div class="menu-list">
+         <div class="menu-img">
+          <img src="img/top-2.png" alt="写真" >
+         </div>
+          <div class="menu-text">
+          <strong>中華そば</strong>
+          <p>イウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオイウエオ</p>
+         </div>
+       </div>
+      </div>
+    </div>
+      
+
+      <div id="acces" class="acces">
+          <h2>〜アクセス〜</h2>
+        
+        <div class="acces-img">
+          <img src="img/top-2.png" alt="">
+          <table border="0" >
+          <tr>
+            <th>TEL</th><td>０００−０００−０００</td>
+          </tr>
+
+          <tr>
+            <th>住所</th><td>日本：偽町３丁目</td>
+          </tr>
+
+          <tr>
+            <th>アクセス</th><td>偽市民バス停より１００m</td>
+          </tr>
+
+          <tr>
+            <th>営業時間</th><td>１１：３０〜１５：００、１７：００〜２０；００</td>
+          </tr>
+
+          <tr>
+            <th>定休日</th><td>毎週月曜日</td>
+          </tr>
+
+          <tr>
+            <th>駐車場</th><td>あり</td>
+          </tr>
+ 
+
+      </table>
+      </div>
+        </div>
+   
+      
+      
+
+      <div id="about" class="about">
+        <h2>〜銀ちゃんラーメンについて〜</h2>
+        <div class="about-text">
+          <p>アイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオアイウエオ</p>
+        </div>
+      <!-- </div> -->
+
+   </main><!--main-->
+
+ <footer id="footer" class="">
+    <div class="g-nav">
+     <ul>
+       <li><a href="#header">トップ</a></li>
+       <li><a href="#news">お知らせ</a></li>
+       <li><a href="#menu">メニュー</a></li>
+       <li><a href="#acces">アクセス</a></li>
+       <li><a href="#about">その他</a></li>
+       <li><a href="fon">お問い合せ</a></li>
+     </ul>
+   </div>
+    <h5>©︎Arashida kazuya</h5>
+ </footer> <!-- footer-->
+
+  </body>
+</html>
+
+
+
+
